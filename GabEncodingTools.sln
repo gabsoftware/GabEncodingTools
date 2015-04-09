@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6E35DE18-4BC3-4AFC-A50F-51D17162CCD7}"
+	ProjectSection(SolutionItems) = preProject
+		Help\GabEncodingToolsHelp.chm = Help\GabEncodingToolsHelp.chm
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "GabEncodingConverterConsole", "GabEncodingConverterConsole\GabEncodingConverterConsole.vbproj", "{59577F21-29A3-43C7-B4C4-9C5AF8EA9B36}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BA9478F1-B31A-4B75-B891-78C410359012} = {BA9478F1-B31A-4B75-B891-78C410359012}
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "GabEncodingConverter", "GabEncodingConverter\GabEncodingConverter.vbproj", "{E7161329-6F13-4F29-B98F-1A83DAE3676C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{CA19D4DE-B232-491A-92BF-7BF3A2758694} = {CA19D4DE-B232-491A-92BF-7BF3A2758694}
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "PostBuild", "PostBuild\PostBuild.vbproj", "{B915F4D9-EBD7-497D-B746-39123B8180A8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{59577F21-29A3-43C7-B4C4-9C5AF8EA9B36} = {59577F21-29A3-43C7-B4C4-9C5AF8EA9B36}
+		{E7161329-6F13-4F29-B98F-1A83DAE3676C} = {E7161329-6F13-4F29-B98F-1A83DAE3676C}
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "PreBuild", "PreBuild\PreBuild.vbproj", "{BA9478F1-B31A-4B75-B891-78C410359012}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncodingTools", "EncodingTools\EncodingTools\EncodingTools.csproj", "{CA19D4DE-B232-491A-92BF-7BF3A2758694}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BA9478F1-B31A-4B75-B891-78C410359012} = {BA9478F1-B31A-4B75-B891-78C410359012}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{59577F21-29A3-43C7-B4C4-9C5AF8EA9B36}.Debug|x86.ActiveCfg = Debug|x86
+		{59577F21-29A3-43C7-B4C4-9C5AF8EA9B36}.Debug|x86.Build.0 = Debug|x86
+		{59577F21-29A3-43C7-B4C4-9C5AF8EA9B36}.Release|x86.ActiveCfg = Release|x86
+		{59577F21-29A3-43C7-B4C4-9C5AF8EA9B36}.Release|x86.Build.0 = Release|x86
+		{E7161329-6F13-4F29-B98F-1A83DAE3676C}.Debug|x86.ActiveCfg = Debug|x86
+		{E7161329-6F13-4F29-B98F-1A83DAE3676C}.Debug|x86.Build.0 = Debug|x86
+		{E7161329-6F13-4F29-B98F-1A83DAE3676C}.Release|x86.ActiveCfg = Release|x86
+		{E7161329-6F13-4F29-B98F-1A83DAE3676C}.Release|x86.Build.0 = Release|x86
+		{B915F4D9-EBD7-497D-B746-39123B8180A8}.Debug|x86.ActiveCfg = Debug|x86
+		{B915F4D9-EBD7-497D-B746-39123B8180A8}.Debug|x86.Build.0 = Debug|x86
+		{B915F4D9-EBD7-497D-B746-39123B8180A8}.Release|x86.ActiveCfg = Release|x86
+		{B915F4D9-EBD7-497D-B746-39123B8180A8}.Release|x86.Build.0 = Release|x86
+		{BA9478F1-B31A-4B75-B891-78C410359012}.Debug|x86.ActiveCfg = Debug|x86
+		{BA9478F1-B31A-4B75-B891-78C410359012}.Debug|x86.Build.0 = Debug|x86
+		{BA9478F1-B31A-4B75-B891-78C410359012}.Release|x86.ActiveCfg = Release|x86
+		{BA9478F1-B31A-4B75-B891-78C410359012}.Release|x86.Build.0 = Release|x86
+		{CA19D4DE-B232-491A-92BF-7BF3A2758694}.Debug|x86.ActiveCfg = Debug|x86
+		{CA19D4DE-B232-491A-92BF-7BF3A2758694}.Debug|x86.Build.0 = Debug|x86
+		{CA19D4DE-B232-491A-92BF-7BF3A2758694}.Release|x86.ActiveCfg = Release|x86
+		{CA19D4DE-B232-491A-92BF-7BF3A2758694}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
