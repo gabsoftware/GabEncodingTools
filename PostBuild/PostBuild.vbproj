@@ -140,7 +140,7 @@
     <PostBuildEvent>del /F /S /Q "$(SolutionDir)release\*.tmp"
 copy /Y "$(SolutionDir)License.txt" "$(SolutionDir)release\"
 cd "$(SolutionDir)release\"
-zip -9 -r ".\GabEncodingTools.zip" ".\*" -xi ".\Thumbs.db"</PostBuildEvent>
+7z a -tzip ".\GabEncodingTools.zip" ".\*" -mx9 -x!Thumbs.db</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
